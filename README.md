@@ -1,4 +1,4 @@
-# Octo Events
+# GitHub Events
 Recebe eventos do GitHub via WebHooks e armazena na base de dados.
 
 ## Principais tecnologias e frameworks utilizados
@@ -17,16 +17,16 @@ Recebe eventos do GitHub via WebHooks e armazena na base de dados.
 $ sudo ./ngrok http 4000
 
 
-#### Criar um repositório e cadastrar o webhook no github.
+#### Criar um repositÃ³rio e cadastrar o webhook no github.
 
-Nas Configurações do Repositório, cadastrar o endpoint /events como webhook conforme exemplo abaixo:
-* Payload URL = BASE_URL/events , onde BASE_URL é a URI informada pelo NGROK
+Nas ConfiguraÃ§Ãµes do RepositÃ³rio, cadastrar o endpoint /events como webhook conforme exemplo abaixo:
+* Payload URL = BASE_URL/events , onde BASE_URL Ã© a URI informada pelo NGROK
 * Content Type = application/json
-* Na opção "Selecionar eventos" e marcar somente a opção `issues`
+* Na opÃ§Ã£o "Selecionar eventos" e marcar somente a opÃ§Ã£o `issues`
 
 
 #### Funcionalidades
-Realizar as operações que deverão disparar eventos no repositório do Github ao qual foi cadastrado o webhook:
+Realizar as operaÃ§Ãµes que deverÃ£o disparar eventos no repositÃ³rio do Github ao qual foi cadastrado o webhook:
  - Criar nova issue
  - Consultar issue a partir do ID
     
